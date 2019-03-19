@@ -15,7 +15,8 @@
 }
 html,body{
     margin: 0;
-    background-color: var(--main-color);
+    background-image: url('./lib/images/fancy-pants.jpg');
+    background-size:50% auto;
     color: white;
 }
 /*font-size setting*/
@@ -57,7 +58,7 @@ p{
 	font-weight: 600;
 }
 a:hover{
-	color: #333;
+    color: #9C6C00;
 	text-decoration: none;
 }
 /*grobal setting*/
@@ -145,7 +146,7 @@ a:hover{
 [class*="img"]:hover{
 	filter: grayscale(0%);
 }
-/**css grid*/
+/*css grid*/
 .grid-1{
 	grid-gap: 1rem;
 	grid-template-columns: 1fr;
@@ -336,6 +337,7 @@ a:hover{
 }
 /*header*/
 .header_wrapper{
+    background-image: url('./lib/images/header.jpeg');
 	position: relative;
 	width: 100%;
 	height: 100vh;
@@ -353,7 +355,7 @@ a:hover{
 }
 .header_title{
     margin: 0;
-    font-size: 8vmax;
+    font-size: 5rem;
 }
 .header_description{
     margin: 0;
@@ -827,45 +829,21 @@ a{
 }
 .content_card:hover{
     background-color: rgb(68, 93, 146); 
-    border-top: solid 1px rgb(68, 93, 146);
-    border-bottom: solid 1px rgb(68, 93, 146);
+    border-color: rgb(68, 93, 146);
 }
 #exampleIndex{
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
+    position: relative;
     display: grid;
-    grid-gap:1rem;
-    background-color: #1C2A4B;
-    padding: 3%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "areaA areaA"
-    "areaB areaC"
-    "areaB areaD";
-}
-.example_title{
-    grid-area: areaA;
+    padding-top: 6%;
 }
 .example_img{
-    grid-area: areaB;
-    height: 100%;
-    min-height: 500px;
+  
+    max-height: 30rem;
     object-fit: contain;
 }
 .example_description{
-    grid-area: areaC;
+  
     display: flex;
-}
-
-@media screen and (max-width:639px){
-    #exampleIndex{
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "areaA"
-        "areaC"
-        "areaB"
-        "areaD";
-    }
 }
 .main_element{
     display: grid;
@@ -883,13 +861,16 @@ a{
     z-index: 10;
 }
 .title{
-    font-size: 6vmax;
+    font-size: 4rem;
 }
 .main_description{
     background-color: #1C2A4B;
-    margin-top: 6vmax;
+    margin-top: 4rem;
     border-radius: 3px;
     padding: 3vh 3vw;
+}
+.example{
+    margin-top: 0;
 }
 .about_table{
     margin: 0 auto;
@@ -898,19 +879,45 @@ td{
     width: 8rem;
     height: 3rem;
 }
+
 .main_btn{
-    background-color: #5264AE;
-    color: white;
-    display: inline-block;
-    margin: auto;
+    background-color:var(--accent-color);
+    border:2px solid var(--accent-color);
     border-radius: 3px;
-    padding: 20px 30px;
+    color:var(--base-color);
+    padding:.5rem;
+    margin: 0 auto;
+    font-size: 2rem;
 }
+.main_btn:hover{
+    background-color:var(--base-color);
+    border:2px solid var(--accent-color);
+    color:var(--accent-color);
+    border-radius: 3px;
+  }
 .contact_btn{
-    color: yellow;
-    font-size: 3rem;
+    font-size:3rem;
+    text-transform:uppercase;
+    color:var(--accent-color);
     margin: auto;
-}
+  }
+  .contact_btn span{
+    display:inline-block;
+    width:1rem;
+    height:1rem;
+    border-top:2px solid white;
+    border-right:2px solid white;
+    margin:.25rem;
+    transition:.3s;
+    transform:rotateZ(45deg);
+  }
+  .contact_btn:hover span{
+    transform:translateX(50%) rotateZ(45deg);
+    color: orange;
+  }
+
+
+
 .inv_mv{
     opacity: 0.1;
     transform: translate(0,50px); 
@@ -935,10 +942,6 @@ td{
     -webkit-transform: translate(0,0); 
     transition: 3s;
 }
-.card_btn.flex{
-  display:flex;
-}
-
 .main_card.hrz{
   grid-gap:0;
   grid-template-columns:1fr 1fr;
@@ -987,13 +990,10 @@ td{
 }
 }
 #visionIndex{
-    background-image: url('./lib/images/yoZora.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-
-
 
 
 
