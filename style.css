@@ -615,6 +615,9 @@ main h5{
     border-bottom: solid 1px gray;
     color: white;
 }
+#servisIndex ul{
+    padding: 0;
+}
 #servisIndex .main_content li:hover{
     background-color: rgb(68, 93, 146); 
     border-color: rgb(68, 93, 146);
