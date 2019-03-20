@@ -462,7 +462,7 @@ main h5{
     color:rgb(253, 180, 85);
     margin: auto;
   }
-  .innner_btn span{
+  .inner_btn span{
     display:inline-block;
     width:1rem;
     height:1rem;
@@ -682,13 +682,6 @@ main h5{
     -webkit-transform: translate(0,0); 
     transition: 3s;
 }
-
-
-
-
-
-
-
 
 
 
