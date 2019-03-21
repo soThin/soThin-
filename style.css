@@ -276,6 +276,9 @@ a:hover{
 	color: var(--font-color);
 	z-index: 701;
 }
+.header_wrapper.sub{
+    height: 50vh;
+}
 .header_content{
 	position: relative;
 	line-height: 1;
