@@ -2,7 +2,7 @@
 	--base-color:rgb(240,240,240);
 	--base-transparent:rgba(240,240,240,.8);
 	--font-color:rgb(27,27,27);
-	--main-color:rgb(47, 57, 82);/*#2F3952*/
+	--main-color:rgb(180, 190, 216);/*#2F3952*/
 	--sub-color:rgb(204, 206, 113);/*#CCCE71*/
 	--accent-color:rgb(253, 180, 85);/*#FDB455*/
 }
@@ -23,6 +23,8 @@ a{
     text-decoration: none;
 }
 ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
   }
 .inline-center{
@@ -80,6 +82,12 @@ a:hover{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.flex.left{
+	justify-content: flex-start;
+}
+.flex.right{
+	justify-content: flex-end;
 }
 .nowrap{
 	white-space: nowrap;
@@ -618,9 +626,6 @@ main h5{
     border-bottom: solid 1px gray;
     color: white;
 }
-#servisIndex ul{
-    padding: 0;
-}
 #servisIndex .main_content li:hover{
     background-color: rgb(68, 93, 146); 
     border-color: rgb(68, 93, 146);
@@ -884,3 +889,68 @@ main h5{
       width: 90%;
     }
   }
+
+  /*パンくずリスト*/
+    .breadcrumbs {
+        width: auto;
+        padding: 7px 10px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+    }
+    .breadcrumbs a{
+        color: rgb(128, 144, 211);
+    }
+    .breadcrumbs a:hover{
+        color: rgb(143, 148, 168);
+    }
+    .breadcrumbs ul{
+        display: flex;
+        justify-content: left;
+    }
+    .breadcrumbs ul li {
+       margin-right: 10px;
+    }
+
+/*singular.php*/
+.singular_wrapper {
+    background-color: #1C2A4B;
+    margin-bottom: 2rem;
+    border-radius: 3px;
+    padding: 3vh 3vw;
+    box-shadow: 0 0 10px 8px rgba(13, 19, 34, 0.5);
+    text-align: left;
+}
+.singular_wrapper h1{
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.singular_wrapper h2 {
+    font-size: 1.4em;
+    background: rgba(216,216,216,0.2);
+    border-left: 10px solid #5FACFC;
+    padding: 5px 10px;
+}
+.singular_wrapper section{
+    margin-bottom: 2rem;
+}
+.category{
+    margin: 1rem;
+}
+.dateCreated{
+    margin: 1rem;
+}
+.singular_wrapper img{
+    width: 100%;
+    height: auto;
+    margin: 1rem;
+}
+.singular_wrapper a{
+    color: rgb(128, 144, 211);
+}
+.singular_wrapper a:hover{
+    color: rgb(143, 148, 168);
+}

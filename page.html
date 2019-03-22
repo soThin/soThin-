@@ -32,6 +32,9 @@
     <script type="text/javascript" src="./lib/main.js"></script>
     <!-- invew -->
     <script type="text/javascript" src="./lib/jquery.inview.js"></script>
+
+    <!-- Font Awesome　-->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 
 <body>
@@ -58,47 +61,74 @@
 
     <header role="banner" class="flex header_wrapper sub" style="background-image: url('./lib/images/pc.jpeg');">
         <div class="inline-center header_content">
-            <h1 class="title">固定ページ</h1>
-            <p class="header_descripiton">sample</p>
+            <h1 class="title inv_mv">固定ページ</h1>
+            <p class="header_descripiton fade_mv">sample</p>
         </div>
     </header>
     <main class="container">
         <article itemscope itemtype="https://schema.org/BlogPosting">
-            <h1 itemprop="headline">タイトル</h1>
-            <time itemprop="dateCreated datePublished" datetime=""></time>
-            <time itemprop="dateModified" datetime=""></time>
-            <div itemprop="articleBody">
 
 
+            <div class="breadcrumbs">
+                <ul>
+                    <li>
+                        <i class="fas fa-home"></i>
+                        <a itemprop="item" href="/">sothin トップ</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-chevron-right"></i>
+                        <a itemprop="item" href="//">page</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-chevron-right"></i>
+                        <a itemprop="item" href="//">page</a>
+                    </li>
 
-                <section class="inv_mv">
-                    <div class="card_item">
-                        <h3>質の高さ</h3>
-                        <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
-                        <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
-                        <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
+                </ul>
+            </div>
+
+            <div class="singular_wrapper">
+                <h1 itemprop="headline">タイトル</h1>
+                <div class="flex right">
+                    <div class="category">カテゴリー:
+                        <a href="カテゴリー">カテゴリー</a>
                     </div>
-                </section>
-                <section class="inv_mv">
-                    <div class="card_item">
-
-                        <h3>対応範囲の広さ</h3>
-                        <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
-                        <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
-                        <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
-                    </div>
-                </section>
-                <section class="inv_mv">
-                    <div class="card_item">
-
-                        <h3>良心価格</h3>
-                        <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
-                        <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
-                        <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
-                    </div>
-                </section>
+                    <time itemprop="dateCreated datePublished" datetime="">公開日 2019/03/22</time>
+                </div>
+                <img class="inv_mv" src="./lib/images/pc.jpeg" alt="">
+                <time itemprop="dateModified" datetime=""></time>
+                <div itemprop="articleBody">
 
 
+
+                    <section class="inv_mv">
+                        <div class="card_item">
+                            <h2>質の高さ</h2>
+                            <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
+                            <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
+                            <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
+                        </div>
+                    </section>
+                    <section class="inv_mv">
+                        <div class="card_item">
+
+                            <h2>対応範囲の広さ</h2>
+                            <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
+                            <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
+                            <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
+                        </div>
+                    </section>
+                    <section class="inv_mv">
+                        <div class="card_item">
+
+                            <h2>良心価格</h2>
+                            <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
+                            <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
+                            <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
+                        </div>
+                    </section>
+
+                </div>
             </div>
         </article>
     </main>
