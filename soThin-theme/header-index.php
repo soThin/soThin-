@@ -69,11 +69,10 @@
             ?>
         </ul>
     </nav>
-    <header role="banner" class="flex header_wrapper sub">
+    <header role="banner" class="flex header_wrapper">
         <div class="inline-center header_content">
             <h1 class="header_title serif inv_mv">soThin</h1>
             <p class="fade_mv">- 良心的な価格で、優れたデザインと機能性を -</p>
         </div>
     </header>
-
         <main class="container">
