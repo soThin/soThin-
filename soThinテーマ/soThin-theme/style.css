@@ -193,7 +193,7 @@ a:hover{
 	--template-cols-lg:4rem 1fr;
 	--template-cols-xl:4rem 1fr;
 	padding: .5rem 0;
-	background-color: rgb(247,247,247, .85);
+	background-color: rgba(118, 119, 199, 0.836);
 	border-bottom: 1px solid var(--font-color);
 }
 .navbar_brand{
