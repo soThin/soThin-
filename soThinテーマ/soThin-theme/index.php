@@ -28,31 +28,6 @@ get_header("index");
             <a href="contact.html" class="main_btn inv_mv">MORE</a>
         </section>
 
-
-        <section class="main_wrapper">
-    <h2 class="main_title">news</h2>
-    <p class="main_description">description</p>
-    <div class="main_content">
-        <?php
-        if (have_posts()) :
-            while (have_posts()) : 
-                the_post(); 
-                ?>
-                <a href="<?php echo get_permalink(); ?>" class="main_post">
-                    <h3 class="post_title"><?php the_title(); ?></h3>
-                    <p class="post_date"><?php the_time("Y/m/j") ?></p>
-                </a>
-                <?php
-            endwhile;
-        else :
-            ?>記事がありません<?php
-        endif;
-        ?>
-    </div>
-    <a class=" main_btn" href="<?php echo esc_url( home_url( '/news' ) ); ?>">VIEW ALL</a>
-</section>
-
-
         <section id="servisIndex">
             <div class="main_wrapper inv_mv">
                 <h2 class="main_title title serif">Servies</h2>
@@ -172,6 +147,30 @@ get_header("index");
             </div>
         </section>
 
+
+        <section id="news" class="main_wrapper">
+    <h2 class="main_title title serif">News</h2>
+    <div class="main_content">
+        <?php
+        if (have_posts()) :
+            while (have_posts()) : 
+                the_post(); 
+                ?>
+                <a href="<?php echo get_permalink(); ?>" class="main_post">
+                    <h3 class="post_title"><?php the_title(); ?></h3>
+                    <p class="post_date"><?php the_time("Y/m/j") ?></p>
+                </a>
+                <?php
+            endwhile;
+        else :
+            ?>記事がありません<?php
+        endif;
+        ?>
+    </div>
+    <a class=" main_btn" href="<?php echo esc_url( home_url( '/news' ) ); ?>">VIEW ALL</a>
+</section>
+
+
         <section id="profileIndex" class="inv_mv">
             <div class="main_wrapper">
                 <h2 class="main_title title serif">Profile</h2>
@@ -233,6 +232,8 @@ get_header("index");
                 <a href="contact.html" class="flex inner_btn">CONTACT<span></span></a>
             </div>
         </section>
+
+        
     </main>
 
     
