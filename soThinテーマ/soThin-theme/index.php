@@ -13,7 +13,7 @@ get_header("index");
 
         <section id="visionIndex">
             <div class="main_wrapper inv_mv">
-                <h2 class="main_title title serif">Vision</h2>
+                <h2 class="main_title serif">Vision</h2>
                 <h3>最先端のサイト作り</h3>
                 <p>soThinについてsoThinについてsoThinについてsoThinについて</p>
                 <p>soThinについてsoThinについてsoThinについてsoThinについてsoThinについてsoThinについて</p>
@@ -25,12 +25,11 @@ get_header("index");
                 <p>soThinについてsoThinについてsoThinについてsoThinについて</p>
                 <p>soThinについてsoThinについてsoThinについて</p>
             </div>
-            <a href="contact.html" class="main_btn inv_mv">MORE</a>
         </section>
 
         <section id="servisIndex">
             <div class="main_wrapper inv_mv">
-                <h2 class="main_title title serif">Servies</h2>
+                <h2 class="main_title serif">Servies</h2>
                 <h3>最適なサービスを</h3>
                 <p>サービスについてサービスについてサービスについてサービスについてサービスについてサービスについて</p>
                 <p>サービスについてサービスについてサービスについてサービスについてサービスについて</p>
@@ -73,9 +72,24 @@ get_header("index");
 
         <section id="exampleIndex">
             <div class="main_wrapper">
-                <h2 class="main_title title serif">Example</h2>
-                <div class="grid grid-2 main_content">
-                    <img class="inv_mv" src="<?= get_theme_file_uri();?>/lib/images/Sora.jpg" alt="">
+                    <h2 class="main_title serif">Example</h2>
+                <div class="grid grid-2">
+                    <div class="sss">
+
+                        <div class="main_content">
+                            <img class="inv_mv" src="<?= get_theme_file_uri();?>/lib/images/Sora.jpg" alt="">
+                        </div>
+                        <div class="main_content">
+                            <img class="inv_mv" src="<?= get_theme_file_uri();?>/lib/images/Sora.jpg" alt="">
+                        </div>
+                        <div class="main_content">
+                            <img class="inv_mv" src="<?= get_theme_file_uri();?>/lib/images/Sora.jpg" alt="">
+
+                        </div>
+                        <div class="main_content">
+                            <img class="inv_mv" src="<?= get_theme_file_uri();?>/lib/images/Sora.jpg" alt="">
+                        </div>
+                    </div>
                     <div class="main_inner">
                         <h3>最適なサービスを</h3>
                         <div>
@@ -92,7 +106,7 @@ get_header("index");
 
 
         <section id="supportIndex">
-            <h2 class="title serif">Support</h2>
+            <h2 class="serif">Support</h2>
             <div class="grid grid-1 inline-center">
                 <div class=" grid main_card hrz inv_mv">
                     <div class="card_header">
@@ -148,8 +162,8 @@ get_header("index");
         </section>
 
 
-        <section id="news" class="main_wrapper">
-    <h2 class="main_title title serif">News</h2>
+        <section id="news" class="main_wrapper inv_mv">
+    <h2 class="main_title serif">News</h2>
     <div class="main_content">
         <?php
         if (have_posts()) :
@@ -167,13 +181,13 @@ get_header("index");
         endif;
         ?>
     </div>
-    <a class=" main_btn" href="<?php echo esc_url( home_url( '/news' ) ); ?>">VIEW ALL</a>
+    <a class="inner_btn" href="<?php echo esc_url( home_url( '/news' ) ); ?>">VIEW ALL<span></span></a>
 </section>
 
 
         <section id="profileIndex" class="inv_mv">
             <div class="main_wrapper">
-                <h2 class="main_title title serif">Profile</h2>
+                <h2 class="main_title serif">Profile</h2>
 
                 <table>
                     <tr>
@@ -229,11 +243,9 @@ get_header("index");
                         </td>
                     </tr>
                 </table>
-                <a href="contact.html" class="flex inner_btn">CONTACT<span></span></a>
+                <a href="contact.html"  onclick="scrollToTop()" class="flex inner_btn">CONTACT<span></span></a>
             </div>
-        </section>
-
-        
+        </section>        
     </main>
 
     

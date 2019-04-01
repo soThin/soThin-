@@ -262,3 +262,16 @@ function hwl_home_pagesize( $query ) {
 
 }
 add_action( 'pre_get_posts', 'hwl_home_pagesize', 1 );
+
+/** 「アーカイブ」ウィジェットの表示件数を設定 */
+add_filter( 'widget_archives_args', 'hook_widget_archives_args' );
+function hook_widget_archives_args( $args ) {
+    
+    // 月別表示
+    $args['type'] = 'monthly';
+ 
+    // 最大出力件数を10件に設定
+    $args['limit'] = 6;
+    
+    return $args;
+}

@@ -72,5 +72,6 @@
             <h1 class="header_title serif inv_mv">soThin</h1>
             <p class="fade_mv">- 良心的な価格で、優れたデザインと機能性を -</p>
         </div>
+        <a id="Scroll" href="#Scroll"><span></span>Scroll</a>
     </header>
         <main class="container">
