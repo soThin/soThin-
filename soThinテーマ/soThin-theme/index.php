@@ -41,7 +41,7 @@ get_header("index");
             </div>
             <ul class="main_content grid grid-3">
                 <a href="#">
-                    <li class="inv_mv">
+                    <li class="inv_mv box-under-shadow">
                         <h2 class="card_title">
                             サービス１
                         </h2>
@@ -50,7 +50,7 @@ get_header("index");
                     </li>
                 </a>
                 <a href="#">
-                    <li class="inv_mv">
+                    <li class="inv_mv box-under-shadow">
                         <h2 class="card_title">
                             サービス2
                         </h2>
@@ -59,7 +59,7 @@ get_header("index");
                     </li>
                 </a>
                 <a href="#">
-                    <li class="inv_mv">
+                    <li class="inv_mv box-under-shadow">
                         <h2 class="card_title">
                             サービス3
                         </h2>
@@ -74,32 +74,32 @@ get_header("index");
             <div class="main_wrapper">
                     <h2 class="main_title serif">Example</h2>
                 <div class="grid grid-2">
-                    <div class="sss">
-
-                        <div class="main_content">
-                            <img class="inv_mv" src="<?= get_theme_file_uri();?>/lib/images/Sora.jpg" alt="">
-                        </div>
-                        <div class="main_content">
-                            <img class="inv_mv" src="<?= get_theme_file_uri();?>/lib/images/Sora.jpg" alt="">
-                        </div>
-                        <div class="main_content">
-                            <img class="inv_mv" src="<?= get_theme_file_uri();?>/lib/images/Sora.jpg" alt="">
-
-                        </div>
-                        <div class="main_content">
-                            <img class="inv_mv" src="<?= get_theme_file_uri();?>/lib/images/Sora.jpg" alt="">
-                        </div>
+                <div class="relative">
+                <div class="slideshow">
+                    <div class="slideshow-slides">
+                        <a class="slide" id="slide-1"><img src="<?= get_theme_file_uri();?>/lib/images/Sora.jpg" alt=""></a>
+                        <a class="slide" id="slide-2"><img src="<?= get_theme_file_uri();?>/lib/images/Sora.jpg" alt=""></a>
+                        <a class="slide" id="slide-3"><img src="<?= get_theme_file_uri();?>/lib/images/Sora.jpg" alt=""></a>
+                        <a class="slide" id="slide-4"><img src="<?= get_theme_file_uri();?>/lib/images/Sora.jpg" alt=""></a>
                     </div>
-                    <div class="main_inner">
-                        <h3>最適なサービスを</h3>
-                        <div>
-                            <p>soThinについてsoThinについてsoThinについてsoThinについてsoThinについて</p>
-                            <p>soThinについてsoThinについてsoThinについてsoThinについて</p>
-                            <p>soThinについてsoThinについて</p>
-                            <p>soThinについてsoThinについてsoThinについてsoThinについて</p>
-                        </div>
-                        <a href="contact.html" class="inner_btn">MORE<span></span></a>
+                    <div class="slideshow-nav">
+                        <a href="#exampleIndex" class="prev disabled" id="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                        <a href="#exampleIndex" class="next" id="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    </div> 
+                    <div class="slideshow-indicator">
                     </div>
+                </div>
+                </div>
+                <div class="main_inner">
+                    <h3>最適なサービスを</h3>
+                    <div>
+                        <p>soThinについてsoThinについてsoThinについてsoThinについてsoThinについて</p>
+                        <p>soThinについてsoThinについてsoThinについてsoThinについて</p>
+                        <p>soThinについてsoThinについて</p>
+                        <p>soThinについてsoThinについてsoThinについてsoThinについて</p>
+                    </div>
+                    <a href="contact.html" class="inner_btn">MORE<span></span></a>                    </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -110,7 +110,7 @@ get_header("index");
             <div class="grid grid-1 inline-center">
                 <div class=" grid main_card hrz inv_mv">
                     <div class="card_header">
-                        <img alt="card cap" src="https://dl.dropbox.com/s/ds26zx6k0fa9550/img1.jpeg?dl=0" class="card_img card_left">
+                        <img alt="card cap" src="<?= get_theme_file_uri();?>/lib/images/akushu.jpeg" class="card_img card_left">
                     </div>
                     <div class="card_body">
                         <h2 class="card_title">Planning</h2>
@@ -123,18 +123,18 @@ get_header("index");
                 <div class="grid main_card hrz toRight flexbox inv_mv">
                     <div class="card_body box1">
                         <h2 class="card_title">Design</h2>
-                        <p class="card_text ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                     <p class="card_text ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
                             commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
                             parturient montes, nascetur ridiculus mus.</p>
                         <a class="flex card_btn" href="#">MORE</a>
                     </div>
                     <div class="card_header">
-                        <img alt="card cap" src="https://dl.dropbox.com/s/ds26zx6k0fa9550/img1.jpeg?dl=0" class="card_img card_right">
+                        <img alt="card cap" src="<?= get_theme_file_uri();?>/lib/images/akushu.jpeg" class="card_img card_right">
                     </div>
                 </div>
                 <div class="grid main_card hrz inv_mv">
                     <div class="card_header">
-                        <img alt="card cap" src="https://dl.dropbox.com/s/ds26zx6k0fa9550/img1.jpeg?dl=0" class="card_img card_left">
+                        <img alt="card cap" src="<?= get_theme_file_uri();?>/lib/images/akushu.jpeg" class="card_img card_left">
                     </div>
                     <div class="card_body">
                         <h2 class="card_title">Develpoment</h2>
@@ -155,35 +155,11 @@ get_header("index");
                         <a class="flex card_btn" href="#">MORE</a>
                     </div>
                     <div class="card_header">
-                        <img alt="card cap" src="https://dl.dropbox.com/s/ds26zx6k0fa9550/img1.jpeg?dl=0" class="card_img card_right">
+                        <img alt="card cap" src="<?= get_theme_file_uri();?>/lib/images/akushu.jpeg" class="card_img card_right">
                     </div>
                 </div>
             </div>
         </section>
-
-
-        <section id="news" class="main_wrapper inv_mv">
-    <h2 class="main_title serif">News</h2>
-    <div class="main_content">
-        <?php
-        if (have_posts()) :
-            while (have_posts()) : 
-                the_post(); 
-                ?>
-                <a href="<?php echo get_permalink(); ?>" class="main_post">
-                    <h3 class="post_title"><?php the_title(); ?></h3>
-                    <p class="post_date"><?php the_time("Y/m/j") ?></p>
-                </a>
-                <?php
-            endwhile;
-        else :
-            ?>記事がありません<?php
-        endif;
-        ?>
-    </div>
-    <a class="inner_btn" href="<?php echo esc_url( home_url( '/news' ) ); ?>">VIEW ALL<span></span></a>
-</section>
-
 
         <section id="profileIndex" class="inv_mv">
             <div class="main_wrapper">

@@ -23,7 +23,9 @@
                     <time itemprop="dateModified" datetime="<?php the_modified_time('c'); ?>" class="main_date modify">Update : <?php the_modified_time('Y/m/j'); ?></time> 
                 <?php endif; ?>
             </div>
-            <img class="inv_mv" src="./lib/images/pc.jpeg" alt="">
+            <?php
+                the_post_thumbnail('full', array( 'class' => 'main_img' ));
+            ?>
             <time itemprop="dateModified" datetime=""></time>
             <div itemprop="articleBody"><?php the_content(); ?></div>
         </div>

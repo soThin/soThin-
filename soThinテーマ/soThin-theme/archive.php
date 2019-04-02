@@ -9,7 +9,7 @@
  */
 get_header(); 
  ?>
-    <?php the_archive_title( '<h2 class="serif sub">', '</h2>' ); ?>
+    <?php the_archive_title( '<h2 class="serif sub inv_mv">', '</h2>' ); ?>
 <div class="grid grid-3">
 
      <?php if(have_posts()):?>

@@ -11,7 +11,7 @@ get_header();
  ?>
 
  
-            <h2 class="serif sub">search：<?php echo esc_html( get_search_query()) ?> </h2>
+            <h2 class="serif sub inv_mv">search：<?php echo esc_html( get_search_query()) ?> </h2>
 <div class="grid grid-3">
      <?php if(have_posts()):?>
      <?php while(have_posts()):the_post();?>

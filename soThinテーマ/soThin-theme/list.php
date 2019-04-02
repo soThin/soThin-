@@ -4,7 +4,7 @@ Template Name: Archives
 */
 get_header(); 
  ?>
-    <?php the_title( '<h2 class="serif">', '</h2>' ); ?>
+    <?php the_title( '<h2 class="serif inv_mv">', '</h2>' ); ?>
 <div class="grid grid-3">
 
 <?php
@@ -28,7 +28,7 @@ if ( $the_query->have_posts() ) :
 
 
 <?php if( !in_category(array('abc','def')) ) { ?>
-     <section class="articles_index inv_mv">
+     <section class="articles_index inv_mv  box-under-shadow">
          <div class="articles_index_thumbnail">
              <a href="<?php the_permalink(); ?>">
                  <?php the_post_thumbnail(); ?>
