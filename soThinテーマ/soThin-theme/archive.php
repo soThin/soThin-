@@ -14,13 +14,13 @@ get_header();
 
      <?php if(have_posts()):?>
      <?php while(have_posts()):the_post();?>
-     <section class="articles_index inv_mv">
-         <div class="articles_index_thumbnail">
+     <section class="main_card inv_mv ">
+         <div class="card_thumbnail">
              <a href="<?php the_permalink(); ?>">
                  <?php the_post_thumbnail(); ?>
              </a>
          </div>
-         <div class="articles_index_inner">
+         <div class="card_description">
              <h2><a href="<?php the_permalink(); ?>"><?php
 if(mb_strlen($post->post_title, 'UTF-8')>30){
 	$title= mb_substr($post->post_title, 0, 30, 'UTF-8');

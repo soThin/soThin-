@@ -31,17 +31,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>TITLE</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,900" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-        <!-- iota -->
-        <link rel="stylesheet" href="<?= get_theme_file_uri();?>/lib/css/iota.css">
-        
-        
-        <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url');?>">
-        
-        <script type="text/javascript" src="<?= get_theme_file_uri();?>/lib/js/main.js"></script>
-        <!-- invew -->
-        <script type="text/javascript" src="<?= get_theme_file_uri();?>/lib/js/jquery.inview.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  
+    crossorigin="anonymous"></script>   
+    <!-- iota -->
+    <link rel="stylesheet" href="<?= get_theme_file_uri();?>/lib/css/iota.css">
+    
+    
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url');?>">
+    
+    <script type="text/javascript" src="<?= get_theme_file_uri();?>/lib/js/main.js"></script>
+    <script type="text/javascript" src="<?= get_theme_file_uri();?>/lib/js/jquery.inview.js"></script>
+    <!-- invew -->
         
 
     <!-- Font Awesome　-->
@@ -60,7 +60,6 @@
             <span></span>
             <span></span>
         </button>
-        
         <?php wp_nav_menu( array(
             'theme_location'=>'Navigation', 
             'container'     =>'', 
@@ -68,14 +67,12 @@
             'items_wrap'    =>'<ul class="navbar_list">%3$s</ul>'));
             ?>
     </nav>
-    <header role="banner" class="flex header_wrapper sub">
-        <div class="inline-center">
-            <div class="header_content">
-                <h2 class="serif inv_mv">soThin</h2>
-                <p class="fade_mv aaa">- 良心的な価格で、優れたデザインと機能性を -</p>
-            </div>
-        </div>
-    </header>
 
+    <header role="banner" class="flex header_wrapper">
+        <div class="inline-center header_content">
+            <h1 class="header_title serif inv_mv">soThin</h1>
+            <p class="fade_mv">- 良心的な価格で、優れたデザインと機能性を -</p>
+        </div>
+        <a id="Scroll" href="#visionIndex"><span></span>Scroll</a>
+    </header>
         <main class="container">
-            

@@ -28,13 +28,13 @@ if ( $the_query->have_posts() ) :
 
 
 <?php if( !in_category(array('abc','def')) ) { ?>
-     <section class="articles_index inv_mv  box-under-shadow">
-         <div class="articles_index_thumbnail">
+     <section class="main_card inv_mv  box-under-shadow">
+         <div class="card_thumbnail">
              <a href="<?php the_permalink(); ?>">
                  <?php the_post_thumbnail(); ?>
              </a>
          </div>
-         <div class="articles_index_inner">
+         <div class="card_description">
              <h2><a href="<?php the_permalink(); ?>"><?php
 if(mb_strlen($post->post_title, 'UTF-8')>30){
 	$title= mb_substr($post->post_title, 0, 30, 'UTF-8');

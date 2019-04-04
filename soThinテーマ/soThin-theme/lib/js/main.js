@@ -145,8 +145,3 @@ $(function () {
 
 });
 
-$(function () {
-    $(".aaa").on('webkitAnimationEnd', function () {
-        $(".header_title").removeClass("hidden");
-    });
-});
