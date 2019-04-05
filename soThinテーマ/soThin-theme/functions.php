@@ -1,4 +1,3 @@
-
 <?php
 
 /*
@@ -107,9 +106,7 @@ add_theme_support( 'custom-logo', array( 'size' => 'raindrops-logo' ) );
 
 
 //フッターウィジェットエリア追加
-register_sidebar(array('name' => 'フッター１'));
-register_sidebar(array('name' => 'フッター２'));
-register_sidebar(array('name' => 'フッター３'));
+register_sidebar(array('name' => 'footer'));
 
 //サイドバーウィジェットエリア追加
 register_sidebar(array(

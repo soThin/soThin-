@@ -9,7 +9,12 @@
  */
 ?>
 <footer role="contentinfo" id="footer" class="footer_wrapper">
-<ul><?php dynamic_sidebar('フッター'); ?></ul>
+<ul class="grid grid-3">
+	<?php dynamic_sidebar('footer'); ?>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
 </footer>
 <?php wp_footer(); ?>
 </body>

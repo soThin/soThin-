@@ -661,8 +661,8 @@ main h5{
 /*exampleIndex*/
 #exampleIndex{
     padding-top: 4rem;
-    width:100vw;
-    margin-left: calc(50% - 50vw);
+    width: 98vw;
+    margin-left: calc(50% - 49vw);
     margin-bottom: 10vh;
     overflow: hidden;
 }
